@@ -1,0 +1,114 @@
+/*-------------------------------------*\
+      Layout and helpers
+      helpers.css
+\*-------------------------------------*/
+
+.row {
+  display: flex;
+  flex-direction:  column;
+  justify-content: space-between;
+}
+
+.row--gray {
+  background-color: #eeeeee;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 30em) {
+  .row {
+    flex-direction: row;
+  }
+
+  .row--vertical {
+    flex-direction: column;
+  }
+}
+
+.visually-hidden {
+  font-size: 0;
+  visibility:hidden;
+}
+
+.btn {
+  border: 0;
+  background-color: #81b3d2;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  background-image: url("../img/logo.gif");
+  background-position: center center;
+  background-size: cover;
+  display: inline-block;
+  height: 70px;
+  width: 138px;
+}
+
+/*-------------------------------------*\
+      CSS reset and utils
+      settings.css
+\*-------------------------------------*/
+
+/*
+* {
+  border: 1px solid red;
+}
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, nav, section, footer, div, ul, li, h1, h2, h3, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: PT Sans, Lato, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h1, h2, p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+@media screen and (min-width: 30em) {
+
+  h1, h2, span, p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+  body {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  span {
+    display: block;
+  }
+}
+
+root {
+  --font__header: 1.33rem;
+  --font__main:   0.9rem;
+  --color--blue: #81b3d2;
+}

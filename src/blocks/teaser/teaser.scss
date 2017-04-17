@@ -1,0 +1,27 @@
+// В этом файле должны быть стили только для БЭМ-блока teaser, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+/*-------------------------------------*\
+      Teaser
+      teaser.css
+\*-------------------------------------*/
+
+.teaser {
+  margin-bottom: 4rem;
+  margin-top:    4rem;
+  text-align:   center;
+}
+
+.teaser__header {
+  font-size:     1.33rem;
+  padding-left:  0.6rem;
+  padding-right: 0.6rem;
+}
+
+.teaser__text {
+  display:      block;
+  font-size:    0.9rem;
+  padding-top:  1rem;
+  text-align:   center;
+}

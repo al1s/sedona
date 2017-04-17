@@ -1,0 +1,106 @@
+// В этом файле должны быть стили только для БЭМ-блока search, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+/*-------------------------------------*\
+      Search form
+      search.css
+\*-------------------------------------*/
+
+.search-form {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.search-form__teaser {}
+
+.search-form__text {
+  display: block;
+}
+
+.search-form__title {
+  background-color: #766357;
+  color: #fff;
+  padding: 2rem;
+}
+
+.search-form__wrapper {
+  background-image: url('../img/search__map.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 180px;
+}
+
+.search-form__container {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.search-form__body {
+  align-items: center;
+  display:   flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-form__label {
+  font-weight: bold;
+  padding-right: 0.5rem;
+  text-align:    left;
+}
+
+.search-form__input {
+  background-color: #f2f2f2;
+  border:     none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size:     1rem;
+  height:        2.4em;
+  margin-bottom: 0.7rem;
+  margin-top:    0.7rem;
+}
+
+.search-form__submit {
+  font-size: inherit;
+  height: 3rem;
+  margin-top: 3rem;
+  text-transform: inherit;
+  width: 100%;
+}
+
+.search-form__label--size-m {
+  flex: 1 1 24%;
+}
+
+.search-form__input--size-l {
+  flex: 2 2 75%;
+}
+
+@media screen and (min-width: 35em) {
+
+    .search-form__container {
+      width: 35rem;
+    }
+    .search-form__title {
+      margin-left:  auto;
+      margin-right: auto;
+      margin-top:   0;
+      width: 35rem;
+    }
+
+  }
+
+@media screen and (min-width: 30em) {
+
+    .search-form__label--size-sm {
+      flex:  1 1 24%;
+      min-width: 24%;
+    }
+
+    .search-form__input--size-sm {
+      flex:  1 1 25%;
+      min-width: 25%;
+    }
+}

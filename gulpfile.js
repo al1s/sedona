@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+/* jshint node: true */
 'use strict';
 
 // Подключим зависимости
@@ -203,7 +205,7 @@ gulp.task('sprite:svg', function (callback) {
                 minify: true
               }
             }]
-          }
+          };
         }))
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(cheerio(function ($) {
@@ -228,10 +230,11 @@ gulp.task('sprite:svg', function (callback) {
   }
 });
 
-// Сборка SVG-спрайта для блока sprite-png
 let spritePngPath = dirs.srcPath + dirs.blocksDirName + '/sprite-png/png/';
+// Сборка SVG-спрайта для блока sprite-png
 gulp.task('sprite:png', function (callback) {
   if((projectConfig.blocks['sprite-png']) !== undefined) {
+    console.log('We are inside sprite generator');
     const spritesmith = require('gulp.spritesmith');
     const buffer = require('vinyl-buffer');
     const merge = require('merge-stream');

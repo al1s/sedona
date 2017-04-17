@@ -17,6 +17,7 @@ node_modules/
 *.rar
 *.zip
 .idea
+.swp
 .publish
 ex_files
 Thumbs.db

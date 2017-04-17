@@ -1,0 +1,26 @@
+// В этом файле должны быть стили только для БЭМ-блока social, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+/*-------------------------------------*\
+      Social
+      social.css
+\*-------------------------------------*/
+
+.social {
+  background-repeat: no-repeat;
+  margin-left:  0.2rem;
+  margin-right: 0.2rem;
+}
+
+.social__twitter {
+  @include sprite($social-twitter);
+}
+
+.social__facebook {
+  @include sprite($social-facebook);
+}
+
+.social__youtube {
+  @include sprite($social-youtube);
+}
