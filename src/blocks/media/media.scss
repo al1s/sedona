@@ -39,7 +39,7 @@
 .media__object {
   display: flex;
   justify-content: center;
-  flex:2 2 67%;
+  flex: 2 2 67%;
 }
 
 .media__body--color-blue {
@@ -49,34 +49,34 @@
 
 .media__header {
   margin-bottom: 0.7rem;
-  margin-left:   auto;
-  margin-right:  auto;
-  margin-top:    1.4rem;
-  max-width:     10rem;
-  padding-left:  0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4rem;
+  max-width: 10rem;
+  padding-left: 0.7rem;
   padding-right: 0.7rem;
   text-align: center;
 }
 
 .media__text {
-  display:       block;
-  font-size:     0.9rem;
+  display: block;
+  font-size: 0.9rem;
   margin-bottom: 1.4rem;
-  margin-top:    0.7rem;
-  text-align:    center;
+  margin-top: 0.7rem;
+  text-align: center;
 }
 
 .media__sequence {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 0.7rem;
-  margin-top:    0.7rem;
+  margin-top: 0.7rem;
   text-align: center;
 }
 
 .media__sequence::before,
 .media__sequence::after {
   content: '\2014';
-  margin-left:  0.4rem;
+  margin-left: 0.4rem;
   margin-right: 0.4rem;
 }
