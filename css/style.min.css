@@ -352,17 +352,17 @@ p {
   margin-left: 0.2rem;
   margin-right: 0.2rem; }
 .social__twitter {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: -132px -248px;
   width: 46px;
   height: 48px; }
 .social__facebook {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: -232px -248px;
   width: 46px;
   height: 48px; }
 .social__youtube {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: -182px -248px;
   width: 46px;
   height: 48px; }
@@ -372,17 +372,17 @@ p {
 .icon {
   background-repeat: no-repeat; }
 .icon__accomodations {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: -306px -200px;
   width: 75px;
   height: 72px; }
 .icon__food {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: -228px -148px;
   width: 74px;
   height: 70px; }
 .icon__presents {
-  background-image: url(../img/sprite-04504163184835668.png);
+  background-image: url(../img/sprite-09066015558039862.png);
   background-position: 0px -303px;
   width: 64px;
   height: 76px; }
@@ -433,32 +433,32 @@ p {
     display: block; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi){
   .social__twitter{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: -306px 0px;
     width: 92px;
     height: 96px; }
   .social__facebook{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: -306px -100px;
     width: 92px;
     height: 96px; }
   .social__youtube{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: -132px -148px;
     width: 92px;
     height: 96px; }
   .icon__accomodations{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: 0px 0px;
     width: 150px;
     height: 144px; }
   .icon__food{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: -154px 0px;
     width: 148px;
     height: 139px; }
   .icon__presents{
-    background-image: url(../img/sprite-04504163184835668.png);
+    background-image: url(../img/sprite-09066015558039862.png);
     background-position: 0px -148px;
     width: 128px;
     height: 151px; } }
