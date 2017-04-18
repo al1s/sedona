@@ -8,7 +8,22 @@
 \*-------------------------------------*/
 
 .menu {
+  background-color: #FFF;
   height: 56px;
+  position: fixed;
+  width: 100%;
+  // On Scroll animation
+  	-webkit-transition:-webkit-transform 0.3s ease-in-out;
+       -moz-transition:   -moz-transform 0.3s ease-in-out;
+        -ms-transition:    -ms-transform 0.3s ease-in-out;
+            transition:        transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 40em) {
+
+  .menu {
+    width: 90vw;
+  }
 }
 
 .menu__list {
@@ -26,3 +41,12 @@
   list-style: none;
   text-align: center;
 }
+
+.menu--hidden {
+   -webkit-transform: translate(0, -100%);
+   -moz-transform: translate(0, -100%);
+   -ms-transform: translate(0, -100%);
+   transform: translate(0, -100%);
+   -webkit-backface-visibility: hidden;
+}
+
