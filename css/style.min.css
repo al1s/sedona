@@ -81,7 +81,11 @@ p {
       menu.css
 \*-------------------------------------*/
 .menu {
-  height: 56px; }
+  background-color: #FFF;
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  transition: transform 0.3s ease-in-out; }
 .menu__list {
   -ms-flex-align: center;
       align-items: center;
@@ -98,6 +102,9 @@ p {
   display: block;
   list-style: none;
   text-align: center; }
+.menu--hidden {
+  transform: translate(0, -100%);
+  -webkit-backface-visibility: hidden; }
 /*-------------------------------------*      Media box
       media.css
 \*-------------------------------------*/
@@ -320,6 +327,23 @@ p {
 .footer__copyright {
   font-size: 1rem;
   font-weight: 500; }
+.to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: transparent;
+  font: 0/0 a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 11' width='17' height='11'%3E%3Cpath fill='%23fff' d='M.202 1.97L1.956.204A.61.61 0 0 1 2.43 0a.61.61 0 0 1 .47.204L8.5 5.84 14.1.204A.61.61 0 0 1 14.57 0a.61.61 0 0 1 .474.204l1.754 1.766a.618.618 0 0 1 .202.473.62.62 0 0 1-.202.476l-7.826 7.875A.61.61 0 0 1 8.5 11a.61.61 0 0 1-.472-.204L.202 2.92A.618.618 0 0 1 0 2.444c0-.203.067-.34.202-.475z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg); }
+.js .to-top {
+    display: none; }
 /*-------------------------------------*      Social
       social.css
 \*-------------------------------------*/
@@ -328,17 +352,17 @@ p {
   margin-left: 0.2rem;
   margin-right: 0.2rem; }
 .social__twitter {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: -132px -248px;
   width: 46px;
   height: 48px; }
 .social__facebook {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: -232px -248px;
   width: 46px;
   height: 48px; }
 .social__youtube {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: -182px -248px;
   width: 46px;
   height: 48px; }
@@ -348,17 +372,17 @@ p {
 .icon {
   background-repeat: no-repeat; }
 .icon__accomodations {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: -306px -200px;
   width: 75px;
   height: 72px; }
 .icon__food {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: -228px -148px;
   width: 74px;
   height: 70px; }
 .icon__presents {
-  background-image: url(../img/sprite-09653802472403141.png);
+  background-image: url(../img/sprite-04504163184835668.png);
   background-position: 0px -303px;
   width: 64px;
   height: 76px; }
@@ -400,11 +424,44 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    box-shadow: 0 0 30 5 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+    width: 90vw; }
+  .menu{
     width: 90vw; } }
 @media screen and (min-width: 60em){
   span{
     display: block; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi){
+  .social__twitter{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: -306px 0px;
+    width: 92px;
+    height: 96px; }
+  .social__facebook{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: -306px -100px;
+    width: 92px;
+    height: 96px; }
+  .social__youtube{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: -132px -148px;
+    width: 92px;
+    height: 96px; }
+  .icon__accomodations{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: 0px 0px;
+    width: 150px;
+    height: 144px; }
+  .icon__food{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: -154px 0px;
+    width: 148px;
+    height: 139px; }
+  .icon__presents{
+    background-image: url(../img/sprite-04504163184835668.png);
+    background-position: 0px -148px;
+    width: 128px;
+    height: 151px; } }
 @media print{
   *,
   *:before,
