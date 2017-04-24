@@ -1,0 +1,51 @@
+// В этом файле должны быть стили только для БЭМ-блока card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @card-условий...
+// Не пишите здесь другие селекторы.
+
+.card {
+  display: flex;
+  flex: 1 1 33%;
+}
+
+.card--direction {
+  flex-direction: column;
+}
+
+@card screen and (min-width: 30em) {
+
+  .card--direction {
+    flex-direction: row;
+  }
+}
+
+.card__body {
+  display: flex;
+  flex: 1 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2.2rem;
+  margin-top: 1.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card__header {
+  margin-bottom: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+//  max-width: 10rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  text-align: center;
+}
+
+.card__text {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  margin-top: 0.3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  text-align: center;
+}
+

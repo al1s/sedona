@@ -1,8 +1,7 @@
-// Datepick element for the search hotel form
+// Datepick element for the hotel search form
 $( document ).ready(function() {
-  $(function() {
-    $('.is-datepick').datepick();
-  });
+    $('#check-in-date').datepick();
+    $('#check-out-date').datepick();
 });
 
 

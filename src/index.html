@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/jquery.datepick.min.css">
+    <link rel="stylesheet" href="css/jquery.datepick.css">
+    <link rel="stylesheet" href="css/normalize.css">
 		<meta charset="UTF-8">
-		<title>Welcome to the Sedona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the Sedona</title>
 	</head>
 <body>
- <nav class="menu">
-    <ul class="menu__list">
-      <li class="menu__item">Информация</li>
-      <li class="menu__item">Фото и видео</li>
-      <li class="menu__item"><div class="logo" aria-label="logo" role=img></div></li>
-      <li class="menu__item">Карта штата</li>
-      <li class="menu__item">Гостиницы</li>
-    </ul>
-  </nav>
+  <!-- <script async src="//jsfiddle.net/alstof/9fbvL900/3/embed/result/"></script> -->
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="logo" role=img alt="Вернуться на главную"></a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" target="_blank">Информация</a></li>
+        <li class="menu__item"><a href="#" target="_blank">Фото и видео</a></li>
+        <li class="menu__item"><a href="#" target="_blank">Карта штата</a></li>
+        <li class="menu__item"><a href="#" target="_blank">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
   <header class="masthead">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
     <span class="visually-hidden">Because the Grand Canyon sucks!</span>
@@ -31,9 +36,9 @@
     <div class="row">
       <div class="media  media--direction">
 
-        <div class="media__body  media__body--color-blue">
+        <div class="media__body  media__body--color-blue  media__body--upper-indent-big">
           <h3 class="media__header">Настоящий городок</h3>
-          <span class="media__sequence">№1</span>
+          <span class="main__sequence">№1</span>
           <p class="media__text"><span>Седона - не аттракцион для туристов,</span> <span>там течет своя жизнь</span></p>
         </div>
 
@@ -45,9 +50,11 @@
     </div>
 
     <div class="row  offers">
-      <div class="media  media--vertical">
+      <div class="media  offer-direction">
         <div class="media__object">
-          <div class="icon  icon__accomodations" role=img aria-label="Жилье - иконка"></div>
+          <div class="icon_wrapper">
+            <div class="icon  icon__accomodations" role=img aria-label="Жилье - иконка"></div>
+          </div>
         </div>
 
         <div class="media__body">
@@ -56,9 +63,24 @@
         </div>
       </div>
 
-      <div class="media  media--vertical">
+      <div class="media  offer-direction">
         <div class="media__object">
-          <div class="icon  icon__food" role=img aria-label="Еда - иконка"></div>
+          <div class="icon_wrapper">
+            <div class="icon  icon__presents" role=img aria-label="Сувениры - иконка"></div>
+          </div>
+        </div>
+
+        <div class="media__body">
+          <h3 class="main__header">Сувениры</h3>
+          <p class="main__text"><span>Не только китайского,</span> <span>но и местного производства!</span></p>
+        </div>
+      </div>
+
+      <div class="media  offer-direction">
+        <div class="media__object">
+          <div class="icon_wrapper">
+            <div class="icon  icon__food" role=img aria-label="Еда - иконка"></div>
+          </div>
         </div>
 
         <div class="media__body">
@@ -67,16 +89,6 @@
         </div>
       </div>
 
-      <div class="media  media--vertical">
-        <div class="media__object">
-          <div class="icon  icon__presents" role=img aria-label="Сувениры - иконка"></div>
-        </div>
-
-        <div class="media__body">
-          <h3 class="main__header">Сувениры</h3>
-          <p class="main__text"><span>Не только китайского,</span> <span>но и местного производства!</span></p>
-        </div>
-      </div>
     </div>
 
 
@@ -84,41 +96,41 @@
     <div class="row">
       <div class="media  media--direction">
 
-        <div class="media__object">
-          <div class="main__image  main__image--diablo-bridge" role=img aria-label="Мост дьявола"></div>
-        </div>
-
-        <div class="media__body  media__body--color-blue">
+        <div class="media__body  media__body--color-blue  media__body--upper-indent-small">
           <h3 class="media__header">Там есть Мост дьявола</h3>
           <span class="main__sequence">№2</span>
           <p class="media__text"><span>Да, по нему можно пройти!</span> <span>Если конечно вы осмелитесь</span></p>
+        </div>
+
+        <div class="media__object">
+          <div class="main__image  main__image--diablo-bridge" role=img aria-label="Мост дьявола"></div>
         </div>
 
       </div>
     </div>
 
     <div class="row row--gray">
-      <div class="media  media--direction">
-        <div class="media__body">
-          <h3 class="main__header">Небольшая площадь</h3>
+      <div class="card  card--direction">
+        <div class="card__body">
+          <h3 class="card__header">Небольшая площадь</h3>
           <span class="main__sequence">№3</span>
-          <p class="main__text"><span>Все достопримечательности</span> <span>находятся очень близко</span></p>
+          <p class="card__text"><span>Все достопримечательности</span> <span>находятся очень близко</span></p>
         </div>
       </div>
 
-      <div class="media  media--direction">
-        <div class="media__body">
-          <h3 class="main__header">Красивая дорога</h3>
+      <div class="card  card--direction">
+        <div class="card__body">
+          <h3 class="card__header">Красивая дорога</h3>
           <span class="main__sequence">№4</span>
-          <p class="main__text"><span>Ехать в Седону из Лас-Вегаса совсем</span> <span>не скучно!</span></p>
+          <p class="card__text"><span>Ехать в Седону из Лас-Вегаса совсем</span> <span>не скучно!</span></p>
         </div>
       </div>
 
-      <div class="media  media--direction">
-        <div class="media__body">
-          <h3 class="main__header">Мало туристов</h3>
+      <div class="card  card--direction">
+        <div class="card__body">
+          <h3 class="card__header">Мало туристов</h3>
           <span class="main__sequence">№5</span>
-          <p class="main__text"><span>Большинство едет в гранд каньон и</span> <span>толпится там</span></p>
+          <p class="card__text"><span>Большинство едет в гранд каньон и</span> <span>толпится там</span></p>
         </div>
       </div>
     </div>
@@ -127,15 +139,16 @@
   <section class="search-form">
     <h2 class="search-form__teaser">Заинтересовались?</h2>
     <p class="search-form__text"><span>Укажите предполагаемые даты поездки,</span> <span>и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
-    <h3 class="search-form__title">Поиск гостиницы в Седоне</h3>
+    <button class="btn search-form__spawn">Найти гостиницу</button>
+    <!--DEV <h3 class="search-form__title">Поиск гостиницы в Седоне</h3> -->
     <div class="search-form__wrapper">
       <div class="search-form__container">
         <form class= "search-form__body" action="/">
-          <label class="search-form__label  search-form__label--size-m" for="check-in-date">Дата заезда:</label>
-          <input class="search-form__input  search-form__input--size-l  is-datepick" type="text" id="check-in-date" name="check-in-date" />
+          <label class="search-form__label  search-form__label--size-m" for="chk-in-date">Дата заезда:</label>
+          <input class="search-form__input  search-form__input--size-l" type="text" id="check-in-date" name="chk-in-date" />
 
           <label class="search-form__label  search-form__label--size-m" for="check-out-date">Дата выезда:</label>
-          <input class="search-form__input  search-form__input--size-l  is-datepick" type="text" id="check-out-date" name="check-out-date" />
+          <input class="search-form__input  search-form__input--size-l" type="text" id="check-out-date" name="check-out-date" />
 
           <label class="search-form__label  search-form__label--size-m  search-form__label--size-sm" for="adults_number">Взрослые:</label>
           <input class="search-form__input  search-form__input--size-l  search-form__input--size-sm" type="number" id="adults_number" name="adults_number" />
@@ -157,6 +170,10 @@
     <div class="footer__col  footer__copyright">Made by</div>
   </footer>
   @@include('blocks/to-top/to-top.html')
-  <script type="text/javascript" src="js/script.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.plugin.js"></script>
+  <script src="js/jquery.datepick.js"></script>
+  <script src="js/jquery.datepick-ru.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

@@ -8,6 +8,12 @@
 \*-------------------------------------*/
 
 .offers {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  &--direction {
+    flex-direction: row;
+  }
 }
+
+

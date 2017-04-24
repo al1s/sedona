@@ -25,18 +25,17 @@
   @include sprite($social-youtube);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
+@media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
 
-    .social__twitter {
-      @include sprite($social-twitter-2x);
-    }
-
-    .social__facebook {
-      @include sprite($social-facebook-2x);
-    }
-
-    .social__youtube {
-      @include sprite($social-youtube-2x);
-    }
+  .social__twitter {
+    @include sprite($social-twitter-2x);
   }
+
+  .social__facebook {
+    @include sprite($social-facebook-2x);
+  }
+
+  .social__youtube {
+    @include sprite($social-youtube-2x);
+  }
+}

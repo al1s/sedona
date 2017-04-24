@@ -8,20 +8,28 @@
 \*-------------------------------------*/
 
 .teaser {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  background-image: url(../img/teaser__shape.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-top: 2.3rem;
+  padding-bottom: 2.4rem;
   text-align: center;
-}
+  z-index: 1;
 
-.teaser__header {
-  font-size: 1.33rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-}
+  &__header {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 
-.teaser__text {
-  display: block;
-  font-size: 0.9rem;
-  padding-top: 1rem;
-  text-align: center;
+  &__text {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.8rem;
+    text-align: center;
+  }
 }

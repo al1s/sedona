@@ -11,8 +11,9 @@
   background-image: url('../img/masthead__shape.png'), url('../img/masthead__main.jpg');
   background-position: center bottom, center center;
   background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 110%;
+  background-size: auto, cover;
   border: 0;
   font-size: 0;
-  height: 60vw;
+  //height: 60vh;
+  height: 450px;
 }

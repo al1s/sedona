@@ -11,7 +11,8 @@
     "sprite-png": [],
     "to-top": [],
     "social": [],
-    "icon": []
+    "icon": [],
+    "card": []
   },
   "addCssBefore": [
     "./src/css/helpers.scss",
@@ -23,13 +24,10 @@
     "./src/scss/print.scss"
   ],
   "singleCompiled": [
-    "./src/scss/jquery.datepick.css"
+    "./src/scss/jquery.datepick.css",
+    "./node_modules/normalize.css/normalize.css"
   ],
-  "addJsBefore": [
-    "./node_modules/jquery/dist/jquery.min.js",
-    "./js/jquery.plugin.js",
-    "./js/jquery.datepick.js"
-  ],
+  "addJsBefore": [],
   "addJsAfter": [
     "./src/js/global-script.js"
   ],
@@ -37,7 +35,12 @@
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
   ],
   "copiedCss": [],
-  "copiedJs": [],
+  "copiedJs": [
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./src/js/jquery.plugin.js",
+    "./src/js/jquery.datepick.js",
+    "./src/js/jquery.datepick-ru.js"
+  ],
   "dirs": {
     "srcPath": "./src/",
     "buildPath": "./build/",
