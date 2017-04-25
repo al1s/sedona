@@ -8,34 +8,43 @@
 \*-------------------------------------*/
 
 .social {
+  background-image: url($spritesheet-image);
   background-repeat: no-repeat;
+	width: 46px;
+	height: 48px;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }
 
 .social__twitter {
-  @include sprite($social-twitter);
+  background-position: 100% 0;
+  background-size: 426%;
+  // @include sprite($social-twitter);
 }
 
 .social__facebook {
-  @include sprite($social-facebook);
+  background-position: 100% 35%;
+  background-size: 426%;
+  // @include sprite($social-facebook);
 }
 
 .social__youtube {
-  @include sprite($social-youtube);
+  background-position: 43% 52%;
+  background-size: 426%;
+  // @include sprite($social-youtube);
 }
 
-@media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+// @media only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
 
-  .social__twitter {
-    @include sprite($social-twitter-2x);
-  }
+//   .social__twitter {
+//     @include sprite($social-twitter-2x);
+//   }
 
-  .social__facebook {
-    @include sprite($social-facebook-2x);
-  }
+//   .social__facebook {
+//     @include sprite($social-facebook-2x);
+//   }
 
-  .social__youtube {
-    @include sprite($social-youtube-2x);
-  }
-}
+//   .social__youtube {
+//     @include sprite($social-youtube-2x);
+//   }
+// }
