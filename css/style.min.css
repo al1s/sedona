@@ -79,6 +79,10 @@ a {
   color: inherit;
   text-decoration: none; }
 /**
+ * $src      The path to your SVG file
+ * $fill-new The fill value you would like to have injected into your paths
+ */
+/**
  * Преобразование пикселей в em на основе переменной с базовым размером шрифта
  * (указывается в px) проекта.
  * @param  {number} $px Число без единиц измерения, кол-во пикселей
@@ -184,6 +188,17 @@ a {
   border: 0;
   font-size: 0;
   height: 450px; }
+.masthead__title--welcome {
+    fill: #81b3d2;
+    height: 5vh;
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.5rem; }
+.masthead__title--welcome svg {
+      fill: #81b3d2;
+      height: 7vh;
+      width: 59vw; }
 /*-------------------------------------*      Teaser
       teaser.css
 \*-------------------------------------*/
@@ -380,7 +395,7 @@ a {
       social.css
 \*-------------------------------------*/
 .social {
-  background-image: url("../img/sprite-08543182913419496.png");
+  background-image: url("../img/sprite-09436125563795774.png");
   background-repeat: no-repeat;
   width: 46px;
   height: 48px;
@@ -399,7 +414,7 @@ a {
       icon.css
 \*-------------------------------------*/
 .icon {
-  background-image: url("../img/sprite-08543182913419496.png");
+  background-image: url("../img/sprite-09436125563795774.png");
   background-repeat: no-repeat;
   width: 36px;
   height: 36px; }
