@@ -16,4 +16,27 @@
   font-size: 0;
   //height: 60vh;
   height: 450px;
+
+  &__title--welcome {
+    // background-image: url(../img/text-welcome.svg);
+    // background-size: cover;
+    // background-position: center center;
+    fill: #81b3d2;
+    height: 5vh;
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.5rem;
+    // @include icon-add-fill('../img/text-welcome.svg', '#81b3d2')
+
+    & svg {
+      fill: #81b3d2;
+      height: 7vh;
+      width: 59vw;
+    }
+  }
+
+
 }
+
+
