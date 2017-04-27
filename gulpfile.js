@@ -43,7 +43,7 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 
 // Плагины postCSS, которыми обрабатываются все стилевые файлы
 let postCssPlugins = [
-  autoprefixer({browsers: ['last 2 version']}),
+  autoprefixer({browsers: ['last 2 version', 'Safari >= 8']}),
   mqpacker({
     sort: true
   }),
@@ -208,8 +208,12 @@ gulp.task('sprite:svg', function (callback) {
           };
         }))
         .pipe(svgstore({ inlineSvg: true }))
-        .pipe(cheerio(function ($) {
-          $('svg').attr('style',  'display:none');
+        .pipe(cheerio({
+          run: function ($) {
+                $('svg').attr('style',  'display:none');
+                $('[fill]').removeAttr('fill');
+          },
+          parserOptions: { xmlMode: true }
         }))
         .pipe(rename('sprite-svg.svg'))
         .pipe(size({

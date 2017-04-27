@@ -18,8 +18,7 @@
  * $src      The path to your SVG file
  * $fill-new The fill value you would like to have injected into your paths
  */
-@mixin icon-add-fill($src, $fill-new)
-{
+@mixin icon-add-fill($src, $fill-new) {
   $data-uri: url('data:image/svg+xml;charset=UTF-8', $src);
   $replace-default: unquote('<path ');
   $replace-new: unquote('<path fill="#{$fill-new}" ');

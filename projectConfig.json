@@ -38,6 +38,7 @@
   "copiedCss": [],
   "copiedJs": [
     "./node_modules/jquery/dist/jquery.min.js",
+    "./src/js/svg4everybody.js",
     "./src/js/jquery.plugin.js",
     "./src/js/jquery.datepick.js",
     "./src/js/jquery.datepick-ru.js"

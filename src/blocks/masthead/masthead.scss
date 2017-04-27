@@ -8,35 +8,48 @@
 \*-------------------------------------*/
 
 .masthead {
+  background-color: #e0eef7;
   background-image: url('../img/masthead__shape.png'), url('../img/masthead__main.jpg');
-  background-position: center bottom, center center;
+  background-position: center bottom, 50% 4.5rem;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
+  background-size: auto, 242%;
   border: 0;
   font-size: 0;
-  //height: 60vh;
   height: 450px;
 
-  &__title--welcome {
-    // background-image: url(../img/text-welcome.svg);
-    // background-size: cover;
-    // background-position: center center;
-    fill: #81b3d2;
-    height: 5vh;
-    width: 48vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6.5rem;
-    // @include icon-add-fill('../img/text-welcome.svg', '#81b3d2')
+  &__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.3rem;
 
-    & svg {
+    &--welcome {
       fill: #81b3d2;
-      height: 7vh;
-      width: 59vw;
+      height: 5vh;
+      width: 48vw;
+    }
+
+    &--gorgeous {
+      fill: #000;
+      height: 4vh;
+      margin-top: 0.4rem;
+      width: 61vw;
+    }
+
+    &--sedona {
+      fill: #fff;
+      height: 7.2vh;
+      margin-top: 3.1rem;
+      width: 87vw;
+    }
+
+    &--canyon {
+      fill: #fff;
+      height: 8vh;
+      margin-top: 4.3rem;
+      width: 62vw;
     }
   }
-
-
 }
 
 
