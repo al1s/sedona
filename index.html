@@ -1,14 +1,17 @@
-<!doctype html>
+  <!doctype html>
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/jquery.datepick.css">
     <link rel="stylesheet" href="css/normalize.css">
 		<meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to the Sedona</title>
 	</head>
-<body>
+  <body>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   <!-- <script async src="//jsfiddle.net/alstof/9fbvL900/3/embed/result/"></script> -->
   <header class="header">
     <a class="logo" href="index.html" aria-label="logo" role=img alt="Вернуться на главную"></a>
@@ -24,6 +27,7 @@
   <header class="masthead">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
     <span class="visually-hidden">Because the Grand Canyon sucks!</span>
+    <div class="masthead__title">
       <svg class="masthead__title--welcome">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#text-welcome"></use>
       </svg>
@@ -36,6 +40,7 @@
       <svg class="masthead__title--canyon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#text-becausecanyon"></use>
       </svg>
+    </div>
   </header>
 
   <section class="main">
