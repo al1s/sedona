@@ -14,16 +14,19 @@
     <script>svg4everybody(); // run it now or whenever you are ready</script>
   <!-- <script async src="//jsfiddle.net/alstof/9fbvL900/3/embed/result/"></script> -->
   <header class="header">
-    <a class="logo" href="index.html" aria-label="logo" role=img alt="Вернуться на главную"></a>
+    <input class="hamburger__input" type="checkbox" name="dropdown" id="chkb-hamburger" />
+    <label class="hamburger__label" for="chkb-hamburger"></label>
+    <a class="logo" href="index.html"></a>
     <nav class="menu">
       <ul class="menu__list">
+        <li class="menu__item"><a href="#" target="_blank">Карта штата</a></li>
         <li class="menu__item"><a href="#" target="_blank">Информация</a></li>
         <li class="menu__item"><a href="#" target="_blank">Фото и видео</a></li>
-        <li class="menu__item"><a href="#" target="_blank">Карта штата</a></li>
         <li class="menu__item"><a href="#" target="_blank">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
+  <div class="main">
   <header class="masthead">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
     <span class="visually-hidden">Because the Grand Canyon sucks!</span>
@@ -161,7 +164,7 @@
     <div class="search-form__wrapper">
       <div class="search-form__container">
         <form class= "search-form__body" action="/">
-          <label class="search-form__label  search-form__label--size-m" for="chk-in-date">Дата заезда:</label>
+          <label class="search-form__label  search-form__label--size-m" for="check-in-date">Дата заезда:</label>
           <input class="search-form__input  search-form__input--size-l" type="text" id="check-in-date" name="chk-in-date" />
 
           <label class="search-form__label  search-form__label--size-m" for="check-out-date">Дата выезда:</label>
@@ -175,6 +178,7 @@
           <button class="btn search-form__submit">Найти</button>
         </form>
       </div>
+      <div class="search-form__map" id="googleMap"></div>
     </div>
   </section>
   <footer class="footer">
@@ -185,12 +189,15 @@
       <div class="btn  social  social__youtube"  role=img aria-label="youtube-button"></div>
     </div>
     <div class="footer__col  footer__copyright">Made by</div>
-  </footer>
+</footer>
+</div>
   @@include('blocks/to-top/to-top.html')
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.plugin.js"></script>
   <script src="js/jquery.datepick.js"></script>
   <script src="js/jquery.datepick-ru.js"></script>
+  <script src="js/jquery.ba-throttle-debounce.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI1sSBJ41UrfuVYxEwrRjl-8F2Xu2o_4s&callback=myMap"></script>
 </body>
 </html>

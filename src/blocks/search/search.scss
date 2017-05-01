@@ -36,10 +36,15 @@
 */
 
 .search-form__wrapper {
-  background-image: url('../img/search__map.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('../img/search__map.jpg');
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // height: 21.7rem;
+}
+
+.search-form__map {
+  width: 100%;
   height: 21.7rem;
 }
 

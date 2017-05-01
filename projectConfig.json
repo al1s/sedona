@@ -13,7 +13,9 @@
     "to-top": [],
     "social": [],
     "icon": [],
-    "card": []
+    "card": [],
+    "hamburger": [],
+    "logo": []
   },
   "addCssBefore": [
     "./src/css/helpers.scss",
@@ -41,7 +43,8 @@
     "./src/js/svg4everybody.js",
     "./src/js/jquery.plugin.js",
     "./src/js/jquery.datepick.js",
-    "./src/js/jquery.datepick-ru.js"
+    "./src/js/jquery.datepick-ru.js",
+    "./src/js/jquery.ba-throttle-debounce.js"
   ],
   "dirs": {
     "srcPath": "./src/",
