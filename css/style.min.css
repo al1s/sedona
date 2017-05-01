@@ -29,20 +29,8 @@
   color: #fff;
   margin: 0;
   padding: 0; }
-.logo {
-  background-image: url("../img/logo.gif");
-  background-position: center center;
-  background-size: cover;
-  font-size: 0;
-  height: 70px;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 138px;
-  z-index: 2; }
+.hamburger__input:checked ~ .body {
+  margin-top: 150px; }
 /*-------------------------------------*      CSS reset and utils
       settings.css
 \*-------------------------------------*/
@@ -105,7 +93,8 @@ a {
   top: 0;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  visibility: hidden; }
 .menu__list {
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -136,6 +125,31 @@ a {
             transform: translate(0, -100%);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
+.hamburger__input:checked ~ .menu {
+  height: initial;
+  visibility: visible; }
+.hamburger__input:checked ~ .menu .menu__list {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+.hamburger__input:checked ~ .menu .menu__item {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #81b3d2;
+  box-shadow: 0 2px 1px rgba(55, 55, 55, 0.4), inset 0 -2px 1px rgba(55, 55, 55, 0.3), inset 0 2px 1px rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  outline: 1px solid rgba(55, 55, 55, 0.2);
+  width: 100%; }
 /*-------------------------------------*      Media box
       media.css
 \*-------------------------------------*/
@@ -334,11 +348,8 @@ a {
   padding: 2rem;
 }
 */
-.search-form__wrapper {
-  background-image: url("../img/search__map.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.search-form__map {
+  width: 100%;
   height: 21.7rem; }
 .search-form__container {
   background-color: rgba(255, 255, 255, 0.9);
@@ -453,7 +464,7 @@ a {
       social.css
 \*-------------------------------------*/
 .social {
-  background-image: url("../img/sprite-048870554325822346.png");
+  background-image: url("../img/sprite-03129131938391956.png");
   background-repeat: no-repeat;
   width: 46px;
   height: 48px;
@@ -472,7 +483,7 @@ a {
       icon.css
 \*-------------------------------------*/
 .icon {
-  background-image: url("../img/sprite-048870554325822346.png");
+  background-image: url("../img/sprite-03129131938391956.png");
   background-repeat: no-repeat;
   width: 36px;
   height: 36px; }
@@ -532,6 +543,40 @@ a {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
   text-align: center; }
+.hamburger__input {
+  display: none; }
+.hamburger__label {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.0%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%2022.928%2021.982%22%20enable-background%3D%22new%200%200%2022.928%2021.982%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Crect%20width%3D%2222.928%22%20height%3D%223.964%22/%3E%0D%0A%09%3Crect%20y%3D%229.009%22%20width%3D%2222.928%22%20height%3D%223.964%22/%3E%0D%0A%09%3Crect%20y%3D%2218.018%22%20width%3D%2222.928%22%20height%3D%223.964%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  fill: #f06d06;
+  height: 32px;
+  position: fixed;
+  right: 0.5625rem;
+  top: 0.5625rem;
+  width: 32px;
+  z-index: 1; }
+.hamburger__input:checked + .hamburger__label {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.0%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%2022.199%2022.199%22%20enable-background%3D%22new%200%200%2022.199%2022.199%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpolygon%20points%3D%2222.199%2C2.804%2019.396%2C0%2011.1%2C8.297%202.804%2C0%200%2C2.803%208.297%2C11.1%200%2C19.396%202.803%2C22.199%2011.1%2C13.902%2019.396%2C22.199%20%0D%0A%0922.199%2C19.396%2013.903%2C11.1%20%22/%3E%0D%0A%3C/svg%3E%0D%0A");
+  background-repeat: no-repeat;
+  -webkit-filter: invert(100%);
+          filter: invert(100%); }
+.logo {
+  background-image: url("../img/logo.gif");
+  background-position: center center;
+  background-size: cover;
+  font-size: 0;
+  height: 70px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 138px;
+  z-index: 2; }
+.hamburger__input:checked ~ .logo {
+  display: none; }
 @media screen and (min-width: 20em){
   h1,
   h2,
@@ -556,7 +601,9 @@ a {
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
     width: 90vw; }
   .menu{
-    width: 90vw; } }
+    width: 90vw; }
+  .hamburger__label, .hamburger__input{
+    margin-right: 5vw; } }
 @media screen and (min-width: 30em){
   .media--direction{
     -webkit-flex-direction: row;
@@ -584,6 +631,27 @@ a {
     margin-right: auto;
     margin-top: 0;
     width: 35rem; } }
+@media screen and (min-width: 40em){
+  .menu{
+    visibility: visible; }
+  .menu__list{
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .menu__item:nth-of-type(1){
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
+  .menu__item:nth-of-type(2){
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .menu__item:nth-of-type(3){
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+  .hamburger__label, .hamburger__input{
+    display: none; } }
 @media screen and (min-width: 60em){
   span{
     display: block; } }
