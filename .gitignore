@@ -5,11 +5,10 @@ src/scss/style.scss
 src/blocks/sprite-svg/img/sprite-svg.svg
 src/blocks/sprite-png/sprite-png.scss
 src/blocks/sprite-png/img/sprite-*.png
-
 .Saved/
 _arc/
-bower_components/
-node_modules/
+bower_components/*
+node_modules/*
 .vscode/
 .DS_Store
 *.log
@@ -18,6 +17,7 @@ node_modules/
 *.zip
 .idea
 *.sw*
+tags
 .publish
 ex_files
 Thumbs.db

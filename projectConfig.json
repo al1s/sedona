@@ -15,7 +15,9 @@
     "icon": [],
     "card": [],
     "hamburger": [],
-    "logo": []
+    "logo": [],
+    "row": [],
+    "btn": []
   },
   "addCssBefore": [
     "./src/css/helpers.scss",

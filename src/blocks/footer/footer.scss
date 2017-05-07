@@ -11,7 +11,6 @@
   align-items: center;
   background-color: #fff;
   display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   font-size: 1.3rem;
   font-weight: 700;
@@ -30,4 +29,20 @@
 .footer__copyright {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.footer--direction {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 48rem) {
+
+  .footer {
+    align-items: inherit;
+    height: 8rem;
+  }
+
+  .footer--direction {
+    flex-direction: row;
+  }
 }

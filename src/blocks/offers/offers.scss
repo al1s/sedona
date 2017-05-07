@@ -7,13 +7,52 @@
       offers.css
 \*-------------------------------------*/
 
-.offers {
+.offer__list {
   margin-bottom: 1rem;
   margin-top: 2rem;
+}
 
-  &--direction {
-    flex-direction: row;
+.offer {
+  flex-direction: row;
+  margin-bottom: 1.1rem;
+
+  &__body--height {
+    height: 100%;
+  }
+
+  &__object {
+    margin-left: 1.5rem;
   }
 }
 
 
+@media screen and (min-width: 48rem) {
+
+  .offer__list {
+    margin-bottom: 3.5rem;
+    margin-top: 3.7rem;
+  }
+
+  .offer {
+    flex-direction: column;
+
+    &__object {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 80rem) {
+
+  .offer__list {
+    margin-bottom: 3.8rem;
+  }
+}

@@ -7,12 +7,14 @@ $gray-darken:                 hsl(0, 0%, 30%);
 $gray-dark:                   hsl(0, 0%, 40%);
 $gray:                        hsl(0, 0%, 50%);
 $gray-light:                  hsl(0, 0%, 60%);
-$gray-lighten:                hsl(0, 0%, 70%);
-$gray-lighter:                hsl(0, 0%, 80%);
-$gray-lightest:               hsl(0, 0%, 90%);
+$gray-lighten:                hsl(0, 0%, 85%);
+$gray-lighter:                hsl(0, 0%, 90%);
+$gray-lightest:               hsl(0, 0%, 95%);
 $white:                       hsl(0, 0%, 100%);
 
-$color-main:                  hsl(208, 98%, 43%);
+$color-main:                  hsl(203, 47%, 66%);
+$color-main--darker:          hsl(203, 42%, 58%);
+$color-main--darkest:         hsl(202, 44%, 54%);
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);

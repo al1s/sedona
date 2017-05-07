@@ -16,7 +16,11 @@
   <header class="header">
     <input class="hamburger__input" type="checkbox" name="dropdown" id="chkb-hamburger" />
     <label class="hamburger__label" for="chkb-hamburger"></label>
-    <a class="logo" href="index.html"></a>
+    <a class="logo" href="index.html">
+   <img srcset="img/logo-sedona@1x.png 1x, img/logo-sedona@2x.png 2x" alt="Sedona logo"></a>
+    <svg class="logo__background">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#form-logo-triangle"></use>
+    </svg>
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item"><a href="#" target="_blank">Карта штата</a></li>
@@ -59,7 +63,7 @@
         <div class="media__body  media__body--color-blue  media__body--upper-indent-big">
           <h3 class="media__header">Настоящий городок</h3>
           <span class="main__sequence">№1</span>
-          <p class="media__text"><span>Седона - не аттракцион для туристов,</span> <span>там течет своя жизнь</span></p>
+          <p class="media__text"><span>Седона не аттракцион для туристов,</span> <span>там течет своя жизнь</span></p>
         </div>
 
         <div class="media__object">
@@ -69,41 +73,51 @@
       </div>
     </div>
 
-    <div class="row  offers">
-      <div class="media  offer-direction">
-        <div class="media__object">
-          <div class="icon_wrapper">
-            <div class="icon  icon__accomodations" role=img aria-label="Жилье - иконка"></div>
-          </div>
+    <div class="row  offer__list">
+      <div class="media  offer">
+        <div class="media__object  offer__object">
+          <!-- <div class="icon_wrapper"> -->
+            <!-- <div class="icon  icon__accomodations" role=img aria-label="Жилье - иконка"></div> -->
+      <svg class="icon  icon__accomodations">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-house"></use>
+      </svg>
+
+          <!-- </div> -->
         </div>
 
-        <div class="media__body">
+        <div class="media__body  offer__body--height">
           <h3 class="main__header">Жилье</h3>
           <p class="main__text"><span>Рекомендуем пожить в настоящем мотеле,</span> <span>все как в кино!</span></p>
         </div>
       </div>
 
-      <div class="media  offer-direction">
-        <div class="media__object">
-          <div class="icon_wrapper">
-            <div class="icon  icon__presents" role=img aria-label="Сувениры - иконка"></div>
-          </div>
+      <div class="media  offer">
+        <div class="media__object  offer__object">
+          <!-- <div class="icon_wrapper"> -->
+            <!-- <div class="icon  icon__presents" role=img aria-label="Сувениры - иконка"></div> -->
+      <svg class="icon  icon__present">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-gift"></use>
+      </svg>
+          <!-- </div> -->
         </div>
 
-        <div class="media__body">
+        <div class="media__body  offer__body--height">
           <h3 class="main__header">Сувениры</h3>
           <p class="main__text"><span>Не только китайского,</span> <span>но и местного производства!</span></p>
         </div>
       </div>
 
-      <div class="media  offer-direction">
-        <div class="media__object">
-          <div class="icon_wrapper">
-            <div class="icon  icon__food" role=img aria-label="Еда - иконка"></div>
-          </div>
+      <div class="media  offer">
+        <div class="media__object  offer__object">
+          <!-- <div class="icon_wrapper"> -->
+            <!-- <div class="icon  icon__food" role=img aria-label="Еда - иконка"></div> -->
+      <svg class="icon  icon__food">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-burger"></use>
+      </svg>
+          <!-- </div> -->
         </div>
 
-        <div class="media__body">
+        <div class="media__body  offer__body--height">
           <h3 class="main__header">Еда</h3>
           <p class="main__text"><span>Всегда заказывайте фирменный бургер,</span> <span>Вы не разочаруетесь!</span></p>
         </div>
@@ -114,9 +128,9 @@
 
 
     <div class="row">
-      <div class="media  media--direction">
+      <div class="media  media--direction  media--order">
 
-        <div class="media__body  media__body--color-blue  media__body--upper-indent-small">
+        <div class="media__body  media__body--color-blue  media__body--indent-small">
           <h3 class="media__header">Там есть Мост дьявола</h3>
           <span class="main__sequence">№2</span>
           <p class="media__text"><span>Да, по нему можно пройти!</span> <span>Если конечно вы осмелитесь</span></p>
@@ -181,23 +195,43 @@
       <div class="search-form__map" id="googleMap"></div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer  footer--direction">
     <div class="footer__col  social__instagram">#VISITSEDONA</div>
     <div class="footer__col">
-      <div class="btn  social  social__twitter"  role=img aria-label="twitter-button"></div>
-      <div class="btn  social  social__facebook" role=img aria-label="facebook-button"></div>
-      <div class="btn  social  social__youtube"  role=img aria-label="youtube-button"></div>
+      <div class="btn  social"  role=img aria-label="twitter-button">
+        <svg class="social__twitter">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+        </svg>
+      </div>
+      <div class="btn  social" role=img aria-label="facebook-button">
+        <svg class="social__facebook">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+        </svg></div>
+      <div class="btn  social"  role=img aria-label="youtube-button">
+        <svg class="social__youtube">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+        </svg></div>
     </div>
     <div class="footer__col  footer__copyright">Made by</div>
 </footer>
 </div>
   @@include('blocks/to-top/to-top.html')
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/jquery.plugin.js"></script>
   <script src="js/jquery.datepick.js"></script>
   <script src="js/jquery.datepick-ru.js"></script>
   <script src="js/jquery.ba-throttle-debounce.js"></script>
   <script src="js/script.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI1sSBJ41UrfuVYxEwrRjl-8F2Xu2o_4s&callback=myMap"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98614560-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
 </body>
 </html>

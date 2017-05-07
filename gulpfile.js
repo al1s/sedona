@@ -8,6 +8,7 @@ const gulp = require('gulp');
 const gulpSequence = require('gulp-sequence');
 const browserSync = require('browser-sync').create();
 
+const pug = require('gulp-pug');
 const postcss = require('gulp-postcss');
 const autoprefixer = require("autoprefixer");
 const mqpacker = require("css-mqpacker");
@@ -211,7 +212,7 @@ gulp.task('sprite:svg', function (callback) {
         .pipe(cheerio({
           run: function ($) {
                 $('svg').attr('style',  'display:none');
-                $('[fill]').removeAttr('fill');
+                // $('[fill]').removeAttr('fill');
           },
           parserOptions: { xmlMode: true }
         }))
@@ -297,6 +298,30 @@ gulp.task('html', function() {
     }))
     .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
     .pipe(gulp.dest(dirs.buildPath));
+});
+
+// Работа с Pug
+// from FrontCoder - https://github.com/FARCER/work_template
+gulp.task('pug', function() {
+  return gulp.src(dirs.srcPath + '/*.pug')
+    // .pipe(plumber())
+    .pipe(plumber({
+      errorHandler: function(err) {
+        notify.onError({
+          title: 'Pug compilation error',
+          message: err.message
+        })(err);
+        this.emit('end');
+      }
+    }))
+    .pipe(pug({
+      pretty: true
+    }))
+    .on("error", notify.onError(function(error) {
+      return "Message to the notifier: " + error.message;
+    }))
+    .pipe(gulp.dest(dirs.buildPath));
+    // .pipe(gulp.dest('dev'));
 });
 
 // Конкатенация и углификация Javascript

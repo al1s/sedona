@@ -11,25 +11,26 @@
 
 .main__image {
   width: 100%;
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35.6vh;
+  height: 35.6vh; // maybe 100% is better
   min-height: 15rem;
 }
 
 .main__image--sedona-streets {
   background-image: url('../img/teaser-1.jpg');
+  background-position: center center;
 }
 
 .main__image--diablo-bridge {
   background-image: url('../img/teaser-2.jpg');
+  background-position: left center;
 }
 
 .main__header {
-  margin-bottom: 0.7rem;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
+  // margin-bottom: 0.7rem;
+  // margin-left: 0.2rem;
+  // margin-right: 0.2rem;
   margin-top: 0.7rem;
   // text-align: center;
 }
@@ -38,8 +39,8 @@
   display: block;
   font-size: 0.9rem;
   line-height: 1.4rem;
-  margin-bottom: 0.1rem;
-  margin-top: 0.2rem;
+  // margin-bottom: 0.1rem;
+  margin-top: 1rem;
   padding-right: 0.5rem;
   // text-align: center;
 }
@@ -47,8 +48,8 @@
 .main__sequence {
   display: block;
   font-size: 0.9rem;
-  margin-bottom: 0.7rem;
-  // margin-top: 0.7rem;
+  // margin-bottom: 0.7rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -57,4 +58,45 @@
   content: '\2014';
   margin-left: 0.4rem;
   margin-right: 0.4rem;
+}
+
+@media screen and (min-width: 48rem) {
+
+  .main {}
+
+  .main__sequence {
+    margin-top: 0.7rem;
+  }
+
+  .main__image {
+    // height: 100%;
+    height: 35.6vh;
+    min-height: 16rem;
+  }
+
+  .main__header {
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+  }
+
+  .main__text {
+    margin-bottom: 0.1rem;
+    margin-top: 1.3rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+
+  .main__image {
+    height: 100%;
+  }
+
+  .main__text {
+    margin-bottom: 0.1rem;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

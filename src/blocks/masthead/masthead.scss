@@ -52,4 +52,76 @@
   }
 }
 
+@media screen and (min-width: 40rem) {
 
+  .masthead {
+    background-position: center bottom, 75% 4.5rem;
+    background-size: 100%, 102%;
+    height: 568px;
+
+    &__title {
+      margin-top: 8.4rem;
+
+      &--welcome {
+        fill: #81b3d2;
+        height: 6vh;
+        width: 25.2vw;
+      }
+
+      &--gorgeous {
+        height: 4vh;
+        margin-top: 0.7rem;
+        width: 34vw;
+      }
+
+      &--sedona {
+        height: 11.2vh;
+        margin-top: 3.1rem;
+        width: 61vw;
+      }
+
+      &--canyon {
+        height: 11vh;
+        margin-top: 3.5rem;
+        width: 38vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 80rem) {
+
+  .masthead {
+    background-position: center bottom, 75% 4.5rem;
+    background-size: 100%, 102%;
+    height: 568px;
+
+    &__title {
+      margin-top: 8.2rem;
+
+      &--welcome {
+        fill: #81b3d2;
+        height: 5.1vh;
+        width: 14.9vw;
+      }
+
+      &--gorgeous {
+        height: 3vh;
+        margin-top: 0.6rem;
+        width: 19.8vw;
+      }
+
+      &--sedona {
+        height: 8.4vh;
+        margin-top: 3.1rem;
+        width: 36vw;
+      }
+
+      &--canyon {
+        height: 8.9vh;
+        margin-top: 3.3rem;
+        width: 23.2vw;
+      }
+    }
+  }
+}
