@@ -4,7 +4,16 @@
 
 .btn {
   border: 0;
-  // background-color: #81b3d2;
   background-color: $color-main;
-  color: #fff;
+  color: $white;
+
+  &:hover {
+    background-color: $color-main--darker;
+  }
+  &:active {
+    background-color: $color-main--darkest;
+    color: $color-main;
+  }
 }
+
+

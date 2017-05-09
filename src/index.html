@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/jquery.datepick.css">
+    <!-- <link rel="stylesheet" href="css/jquery.datepick.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
 		<meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,17 +16,17 @@
   <header class="header">
     <input class="hamburger__input" type="checkbox" name="dropdown" id="chkb-hamburger" />
     <label class="hamburger__label" for="chkb-hamburger"></label>
-    <a class="logo" href="index.html">
+    <a class="logo" href="index.html" rel="noopener">
    <img srcset="img/logo-sedona@1x.png 1x, img/logo-sedona@2x.png 2x" alt="Sedona logo"></a>
     <svg class="logo__background">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#form-logo-triangle"></use>
     </svg>
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" target="_blank">Карта штата</a></li>
-        <li class="menu__item"><a href="#" target="_blank">Информация</a></li>
-        <li class="menu__item"><a href="#" target="_blank">Фото и видео</a></li>
-        <li class="menu__item"><a href="#" target="_blank">Гостиницы</a></li>
+        <li class="menu__item"><a href="#googleMap" target="_blank" rel="noopener">Карта штата</a></li>
+        <li class="menu__item"><a href="#info" target="_blank" rel="noopener">Информация</a></li>
+        <li class="menu__item"><a href="#" target="_blank" rel="noopener">Фото и видео</a></li>
+        <li class="menu__item"><a href="#" target="_blank" rel="noopener">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -52,7 +52,7 @@
 
   <section class="main">
 
-    <header class="row  row--vertical  teaser">
+    <header class="row  row--vertical  teaser" id="info">
       <h2 class="teaser__header"><span>Седона &mdash; небольшой городок в Аризоне,</span>  <span>заслуживающий большего</span></h2>
       <p><span class="teaser__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span></p>
     </header>
@@ -217,9 +217,9 @@
 </div>
   @@include('blocks/to-top/to-top.html')
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery.plugin.js"></script>
-  <script src="js/jquery.datepick.js"></script>
-  <script src="js/jquery.datepick-ru.js"></script>
+  <!-- <script src="js/jquery.plugin.js"></script> -->
+  <!-- <script src="js/jquery.datepick.js"></script> -->
+  <!-- <script src="js/jquery.datepick-ru.js"></script> -->
   <script src="js/jquery.ba-throttle-debounce.js"></script>
   <script src="js/script.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI1sSBJ41UrfuVYxEwrRjl-8F2Xu2o_4s&callback=myMap"></script>

@@ -8,7 +8,7 @@
 \*-------------------------------------*/
 
 .masthead {
-  background-color: #e0eef7;
+  background-color: $color-main--lightest;
   background-image: url('../img/masthead__shape.png'), url('../img/masthead__main.jpg');
   background-position: center bottom, 50% 4.5rem;
   background-repeat: no-repeat, no-repeat;
@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 48rem) {
 
   .masthead {
     background-position: center bottom, 75% 4.5rem;

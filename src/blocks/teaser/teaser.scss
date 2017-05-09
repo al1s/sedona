@@ -34,6 +34,13 @@
   }
 }
 
+@media screen and (min-width: 21.25rem) {
+
+  .teaser {
+    background-image: none;
+  }
+}
+
 @media screen and (min-width: 48rem) {
 
   .teaser {

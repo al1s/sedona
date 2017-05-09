@@ -8,7 +8,7 @@
 \*-------------------------------------*/
 
 .menu {
-  background-color: #fff;
+  background-color: $white;
   height: 56px;
   position: fixed;
   width: 100%;
@@ -31,6 +31,18 @@
     list-style: none;
     text-align: center;
     width: 25%;
+
+    &:hover {
+      color: $color-main--lighter;
+    }
+
+    &:active {
+      color: $color-grey-red;
+    }
+
+    &:hover:active {
+      color: $color-grey-red--darker;
+    }
   }
 
   &__item:nth-of-type(2) {
@@ -108,14 +120,23 @@
 
 .hamburger__input:checked ~ .menu .menu__item {
   align-items: center;
-  background-color: #81b3d2;
+  background-color: $color-main;
   box-shadow: 0 2px 1px rgba(55, 55, 55, 0.4), inset 0 -2px 1px rgba(55, 55, 55, 0.3), inset 0 2px 1px rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: $white;
   display: flex;
   height: 50px;
   justify-content: center;
   margin: 0;
   outline: 1px solid rgba(55, 55, 55, 0.2);
   width: 100%;
+
+  &:hover {
+    background-color: $color-main--darker;
+  }
+
+  &:active {
+    background-color: $color-main--darkest;
+    color: $color-main;
+  }
 }
 

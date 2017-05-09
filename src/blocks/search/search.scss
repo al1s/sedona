@@ -30,8 +30,8 @@
 
 /*
 .search-form__title {
-  background-color: #766357;
-  color: #fff;
+  background-color: $color-grey-red;
+  color: $white;
   padding: 2rem;
 }
 */
@@ -82,7 +82,7 @@
 }
 
 .search-form__input {
-  background-color: #f2f2f2;
+  background-color: $gray-lightest;
   border: none;
   box-shadow: none;
   font-family: inherit;
