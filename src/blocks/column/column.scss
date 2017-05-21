@@ -1,0 +1,24 @@
+// В этом файле должны быть стили только для БЭМ-блока column, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.column {
+  display: flex;
+  flex: 1 1 33%;
+  flex-wrap: nowrap;
+  min-width: 33%;
+
+  &--direction {
+    flex-direction: column;
+  }
+
+  &--narrow {
+    flex: 1 1 24%;
+    min-width: 24%;
+  }
+
+  &--wide {
+    flex: 1 1 73%;
+    min-width: 73%;
+  }
+}

@@ -22,6 +22,7 @@
   border: 1px solid red;
 }
 */
+
 html {
   box-sizing: border-box;
 }
@@ -30,6 +31,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html,
@@ -38,6 +40,8 @@ nav,
 section,
 footer,
 div,
+fieldset,
+legend,
 ul,
 p,
 li,
@@ -50,8 +54,26 @@ img {
 }
 
 body {
-  font-family: 'PT Sans', Lato, Arial, sans-serif;
+  font-family: $font-family;
   text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+  display: table-cell;
+  min-width: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+}
+
+legend {
+  display: block;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
 }
 
 h1,

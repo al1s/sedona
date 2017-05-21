@@ -24,31 +24,49 @@
     margin-top: 6.3rem;
 
     &--welcome {
-      fill: #81b3d2;
+      fill: $color-main;
       height: 5vh;
       width: 48vw;
     }
 
     &--gorgeous {
-      fill: #000;
+      fill: $black;
       height: 4vh;
       margin-top: 0.4rem;
       width: 61vw;
     }
 
     &--sedona {
-      fill: #fff;
+      fill: $white;
       height: 7.2vh;
       margin-top: 3.1rem;
       width: 87vw;
     }
 
     &--canyon {
-      fill: #fff;
+      fill: $white;
       height: 8vh;
       margin-top: 4.3rem;
       width: 62vw;
     }
+  }
+}
+
+@media screen and (min-width: 21rem) {
+
+  .masthead {
+    background-position: center bottom, 50% 10.5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 120%;
+  }
+}
+
+@media screen and (min-width: 37rem) {
+
+  .masthead {
+    background-position: center bottom, 50% 3.5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 110%;
   }
 }
 
@@ -63,7 +81,7 @@
       margin-top: 8.4rem;
 
       &--welcome {
-        fill: #81b3d2;
+        fill: $color-main;
         height: 6vh;
         width: 25.2vw;
       }
@@ -100,7 +118,7 @@
       margin-top: 8.2rem;
 
       &--welcome {
-        fill: #81b3d2;
+        fill: $color-main;
         height: 5.1vh;
         width: 14.9vw;
       }

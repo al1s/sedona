@@ -27,7 +27,7 @@ $color-grey-red--darker:      hsl(23, 18%, 32%);
 
 $text-color:                  $gray-darkest;
 $text-color--muted:           $gray;
-$body-bg:                     #fff;
+$body-bg:                     $white;
 
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
@@ -38,18 +38,20 @@ $border-color:                $gray-light;
 
 // Базовая типографика
 
-$font-size:                   14px;
-$font-size--h1:               2.25em;
-$font-size--h2:               1.875em;
-$font-size--h3:               1.5em;
-$font-size--h4:               1.25em;
-$font-size--h5:               1em;
-$font-size--h6:               1em;
-$font-size--small:            0.75em;
+$font-size--normal:           0.875rem;
+$font-size--bigger:           1.125rem;
+$font-size--biggest:          1.3125rem;
 
-$line-height:                 1.375em;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-size--h1:               2.25rem;
+$font-size--h2:               1.125rem;
+$font-size--h3:               1.5rem;
+$font-size--small:            0.75rem;
+// 14-0.875, 18-1.125, 21-1.3125, 30-1.875
+
+$line-height:                 1.375rem;
+
+$font-family:                 'PT Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;

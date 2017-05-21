@@ -17,13 +17,17 @@
     "hamburger": [],
     "logo": [],
     "row": [],
-    "btn": []
+    "btn": [],
+    "form": [],
+    "box": [],
+    "spin": [],
+    "column": []
   },
   "addCssBefore": [
-    "./src/css/helpers.scss",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "./src/scss/functions.scss"
+    "./src/scss/functions.scss",
+    "./src/css/helpers.scss"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"

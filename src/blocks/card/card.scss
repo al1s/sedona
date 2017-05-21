@@ -12,6 +12,7 @@
   flex: 1 1 33%;
   margin-bottom: 2rem;
   margin-top: 1.4rem;
+  min-width: 32%;
 }
 
 .card--direction {
@@ -26,6 +27,7 @@
 }
 
 .card__body {
+  // display: flex;
   // margin-bottom: 2.2rem;
   // margin-top: 1.4rem;
   // padding-left: 0.5rem;
@@ -33,10 +35,8 @@
 }
 
 .card__header {
-  // margin-bottom: 0.8rem;
   margin-left: auto;
   margin-right: auto;
-  //max-width: 10rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   text-align: center;

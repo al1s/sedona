@@ -1,0 +1,170 @@
+  <!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.min.css" />
+    <!-- <link rel="stylesheet" href="css/jquery.datepick.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+		<meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the Sedona</title>
+	</head>
+  <body>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <!-- <script async src="//jsfiddle.net/alstof/9fbvL900/3/embed/result/"></script> -->
+  <header class="header">
+    <input class="hamburger__input" type="checkbox" name="dropdown" id="chkb-hamburger" />
+    <label class="hamburger__label" for="chkb-hamburger"></label>
+    <a class="logo" href="index.html" rel="noopener">
+   <img srcset="img/logo-sedona@1x.png 1x, img/logo-sedona@2x.png 2x" alt="Sedona logo"></a>
+    <svg class="logo__background">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#form-logo-triangle"></use>
+    </svg>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#googleMap" target="_blank" rel="noopener">Карта штата</a></li>
+        <li class="menu__item"><a href="#info" target="_blank" rel="noopener">Информация</a></li>
+        <li class="menu__item"><a href="#" target="_blank" rel="noopener">Фото и видео</a></li>
+        <li class="menu__item"><a href="#" target="_blank" rel="noopener">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+  <header class="masthead">
+    <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+    <div class="masthead__title">
+      <svg class="masthead__title--sedona">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#text-sedona"></use>
+      </svg>
+    </div>
+  </header>
+
+  <form class="main">
+
+    <header class="row  row--vertical  teaser" id="info">
+      <h2 class="teaser__header"><span>Оставьте свой отзыв</span></h2>
+      <p><span class="teaser__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</span></p>
+    </header>
+
+    <div class="row  row--indent  row--border">
+      <fieldset id="full_name">
+        <legend class="row__header">Представьтесь, пожалуйста:</legend>
+
+        <!-- <h2 class="row__header">Представьтесь, пожалуйста:</h3> -->
+        <div class="box  box--centered  box--direction">
+            <label class="form__label" for="Surname">Фамилия</label><input class="form__input" aria-required="true" type="text" name="Surname" value="" id="FIO" required>
+            <label class="form__label" for="Name">Имя</label><input class="form__input" aria-required="true" type="text" name="Name" value="" id="FIO" required>
+            <label class="form__label" for="Second_name">Отчество</label><input class="form__input" type="text" name="Second_name" value="" id="FIO">
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="row  row--indent  row--border">
+      <fieldset id="impression">
+        <legend class="row__header">Ваше общее впечатление </legend>
+      <!-- <h2 class="row__header">Ваше общее впечатление </h2> -->
+        <div class="box  box--centered  box--direction">
+            <input class="form__input  form__input--radio" type="radio" name="impression" value="" id="impression_positive" />
+            <label class="form__label  form__label--radio" for="impression_positive">Скорее положительное</label>
+
+            <input class="form__input  form__input--radio" type="radio" name="impression" value="" id="impression_negative" />
+            <label class="form__label  form__label--radio" for="impression_negative">Скорее отрицательное</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="row  row--indent  row--border">
+      <fieldset id="visit_date">
+        <legend class="row__header">Даты вашей поездки:</legend>
+      <!-- <h2 class="row__header">Даты вашей поездки:</h2> -->
+        <div class="box  box--centered  box--direction">
+            <label class="form__label" for="visit_date">Дата приезда:</label>
+            <input class="form__input" aria-required="true" type="date" name="visit_date" value="" id="checkin-date" required>
+
+            <label class="form__label" for="visit_date">Длительность пребывания:</label>
+            <div class="spin">
+              <input class="btn  spin__button  spin__button--minus" type="button" value="-" name="decrease_period" id="decrease_period"/>
+              <input class="form__input  spin__scale" aria-required="true" type="number" name="visit_period" value="1" min="1" id="period" required>
+              <input class="btn  spin__button  spin__button--plus" type="button" value="+" name="increase_period" id="increase_period"/>
+            </div>
+            <label class="form__label" for="visit_date">Дата отъезда:</label>
+            <input class="form__input" aria-required="true" type="date" name="visit_date" value="" id="checkout-date" required>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="row  row--indent  row--border">
+      <fieldset id="number_guests">
+        <legend class="row__header">Кол-во путешественников:</legend>
+      <!-- <h2 class="row__header">Кол-во путешественников:</h2> -->
+        <div class="box  box--centered  box--direction" id="guests_details">
+
+          <label class="form__label" for="number_guests">Количество путешественников</label>
+          <div class="spin">
+            <input class="btn  spin__button  spin__button--minus" type="button" value="-" name="decrease_number" id="decrease_number"/>
+            <input class="form__input  spin__scale" aria-required="true" type="number" name="number_guests" value="1" min="1" id="number" required>
+            <input class="btn  spin__button  spin__button--plus" type="button" value="+" name="increase_number" id="increase_number"/>
+          </div>
+
+          <div class="box  box--start-aligned" id="guest">
+            <div class="column  column--direction  column--narrow">
+              <label class="form__label" for="number_guests">№</label>
+              <input class="form__input" type="text" name="guest_index" value="1" id="guest_index" disabled>
+            </div>
+            <div class="column  column--direction  column--wide">
+              <label class="form__label" for="Surname">Фамилия</label>
+              <input class="form__input" aria-required="true" type="text" name="Surname" value="" id="surname" required>
+              <label class="form__label" for="Name">Имя</label>
+              <input class="form__input" aria-required="true" type="text" name="Name" value="" id="name" required>
+              <label class="form__label" for="Second_name">Отчество</label>
+              <input class="form__input" type="text" name="second_name" value="" id="FIO">
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="row  row--indent  row--border">
+      <fieldset id="sights">
+        <legend class="row__header">Посещенные достопримечательности:</legend>
+      <!-- <h2 class="row__header">Посещенные достопримечательности:</h2> -->
+        <div class="box  box--centered  box--direction">
+          <input class="form__input  form__input--checkbox" type="checkbox" name="sight" value="" id="sight_diablo">
+          <label class="form__label  form__label--checkbox" for="sight_diablo">Мост Дьявола</label>
+          <input class="form__input  form__input--checkbox" type="checkbox" name="sight" value="" id="sight_park">
+          <label class="form__label  form__label--checkbox" for="sight_park">Слайд-парк</label>
+          <input class="form__input  form__input--checkbox" type="checkbox" name="sight" value="" id="sight_mount">
+          <label class="form__label  form__label--checkbox" for="sight_mount">Гора-Колокол</label>
+          <input class="form__input  form__input--checkbox" type="checkbox" name="sight" value="" id="sight_red">
+          <label class="form__label  form__label--checkbox" for="sight_red">Красные скалы</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="row  row--indent  row--border">
+      <h2 class="row__header">Загрузите фотографии</h2>
+      <div class="box  box--centered  box--direction">
+          <input class="btn" type="button" name="load_photo" value="Выбрать фотографии" id="load_photo">
+          <div id="thumbs"></div>
+      </div>
+    </div>
+    <input class="btn" type="button" name="submit_review" value="Отправить отзыв" id="submit_review">
+  </form>
+  @@include('blocks/to-top/to-top.html')
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.ba-throttle-debounce.js"></script>
+  <script src="js/script.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98614560-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

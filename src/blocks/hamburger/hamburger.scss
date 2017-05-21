@@ -8,7 +8,9 @@
 \*-------------------------------------*/
 
 .hamburger__input {
-  display: none;
+  // display: none;
+  left: -100rem;
+  position: absolute;
 }
 
 .hamburger__label {

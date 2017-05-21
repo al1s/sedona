@@ -1,0 +1,33 @@
+// В этом файле должны быть стили только для БЭМ-блока spin, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.spin {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @include get-width(10,12)
+}
+
+.spin__button {
+  flex: 0 0 auto;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  background-position: center center;
+
+  &--minus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0D%0A%3Csvg%20fill%3D%22%23fff%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%209.917%201.917%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Crect%20width%3D%229.917%22%20height%3D%221.917%22/%3E%0D%0A%3C/svg%3E%0D%0A');
+  }
+
+  &--plus {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0D%0A%3Csvg%20fill%3D%22%23fff%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%209.917%209.917%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpolygon%20points%3D%229.917%2C4%205.917%2C4%205.917%2C0%204%2C0%204%2C4%200%2C4%200%2C5.917%204%2C5.917%204%2C9.917%205.917%2C9.917%205.917%2C5.917%209.917%2C5.917%20%22/%3E%0D%0A%3C/svg%3E%0D%0A');
+  }
+}
+
+.spin__scale {
+  flex: 1 1 auto;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}

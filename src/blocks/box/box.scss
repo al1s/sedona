@@ -1,0 +1,21 @@
+// В этом файле должны быть стили только для БЭМ-блока box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Не пишите здесь другие селекторы.
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__direction {
+    flex-direction: column;
+  }
+
+  &--centered {
+    align-items: center;
+  }
+
+  &--start-aligned {
+    align-items: flex-start;
+  }
+}
+
